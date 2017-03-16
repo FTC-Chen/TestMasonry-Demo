@@ -1,0 +1,22 @@
+//
+//  Masonry.pch
+//  TestMasonry
+//
+//  Created by anyongxue on 2017/3/15.
+//  Copyright © 2017年 cc. All rights reserved.
+//
+
+#ifndef Masonry_pch
+#define Masonry_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define KScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define KScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define KVIEWBGColor [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1]
+
+//self弱引用
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#endif /* Masonry_pch */
